@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap');
+
+.testimonial-carousel {
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	height: 450px;
+	position: relative;
+	padding: 20px 10px;
+	display: flex;
+	.icon-container {
+		position: relative;
+		padding: 0 5px;
+		max-width: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 700;
+		@media (min-width: 768px) {
+			max-width: 50px;
+			padding: 0 10px;
+		}
+		span.lnr {
+			color: #dadada;
+			font-size: 1.3em;
+			cursor: pointer;
+			transition: color 0.3s linear;
+            height: 50px;
+            width: 50px;
+
+			@media (min-width: 768px) {
+				font-size: 2.3em;
+			}
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	
+}
+
+.testimonial-items {
+	position: relative;
+	flex: 1;
+	overflow: hidden;
+    margin-left:25px;
+}
+
+.testimonial-item {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	position: absolute;
+	display: flex;
+    
+	p.testimonial-author {
+		font-weight: bold;
+		text-align: right;
+	}
+	&.first {
+		left: 0;
+	}
+	&.second {
+		left: 100%;
+	}
+	&.third {
+		left: 200%;
+	}
+}
+.carousel-h2{
+	font-family:  "Rubik Scribble", system-ui;
+    font-size: 36px;
+    position: absolute;
+    top: 74px;
+	left: 2px;
+    font-style: italic;
+    font-weight: normal;
+}
+.testimonial-item h3{
+    margin-top: auto;
+    font-size: 20px;
+}
+.testimonial-item div{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.testimonial-item img{
+	width: 50%;
+	margin-right: 20px;
+	height: 80%;
+	align-self: flex-end;
+	margin-left: auto;
+	object-fit: contain;
+}
+.quote{
+    font-style: italic;
+    font-size: 16px;
+    margin: 0;
+}
